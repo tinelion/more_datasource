@@ -1,0 +1,22 @@
+server:
+   port: 8080
+
+spring:
+  datasource:
+    db1:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: password
+      jdbc-url: jdbc:mysql://123.207.231.159:3306/hibernate?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      type: com.alibaba.druid.pool.DruidDataSource
+
+    db2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: password
+      jdbc-url: jdbc:mysql://123.207.231.159:3307/hibernate?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
